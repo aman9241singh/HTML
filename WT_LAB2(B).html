@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    
+</head>
+<body style = "border:2px solid black">
+
+    <h1 style = "background-color:bisque; margin: 0 ; padding: 8px" align = "center">Employee Registration Form</h1>
+    <form action = "welcome.html" method = "get" target = "_blank" style = "background-color:rgb(121, 218, 231);">
+        <fieldset style = "border-color: black;">
+            <legend>Personal Information</legend>
+            <label>Employee Name:</label>
+            <input type="text" name="emp_name" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label>Employee ID:</label>
+            <input type="text" name = "emp_id" placeholder="Enter your id" required>
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type="email" name = "emp_email" placeholder="your email" required>
+            <br>
+            <br>
+            <label>Password:</label>
+            <input type="password" name = "emp_password" placeholder="Enter your password" required>
+            <br>
+            <br>
+            <label>Phone Number:</label>
+            <input type="tel" name = "emp_number"  required>
+            <br>
+            <br>
+            <label>Age:</label>
+            <input type="number"  name = "emp_age" min="18" max="60">
+            <br>
+            <br>
+           <label>Gender:</label>
+            <input type = "Radio"  name = "reg_gender"  value = "Male"> <label>Male</label>
+            <input type = "Radio"   name = "reg_gender" value = "Female"> <label>Female</label>
+             <input type = "Radio"   name = "reg_gender" value = "other"> <label>Other</label>
+            <br>
+            <br>
+        </fieldset>
+
+        <fieldset style = "border-color: black;">
+            <legend>Job Details</legend>
+            <label>Upload Profile Picture:</label>
+            <input type="file"  name = "emp_file" multiple required>
+            <br>
+            <br>
+            <label>Favorite Color:</label>
+            <input type="color" name = "emp_color" required>
+            <br>
+            <br>
+            <label>Search Department:</label>
+            <input type="search" name = "emp_department" placeholder="Search for your department">
+            <br>
+            <br>
+            <label>Experience (Years):</label>
+            <input type="range" min="0" max="30" required>
+            <br>
+            <br>
+            <label>Personal Website:</label>
+            <input type="https://www.anime.com/">
+            <br>
+            <br>
+            <label>Department:</label>
+            <select>
+                <option>Select</option>
+                <option>HR</option>
+                <option>IT</option>
+                <option>Finance</option>
+                <option>Marketing</option>
+                <option>Sales</option>
+                <option>Operations</option>
+            </select>
+            <br>
+            <br>
+            <label>Designation:</label>
+            <input type="text" name = "emp_designation" required>
+            <br>
+            <br>
+
+            <label>Preferred Country:</label>
+            <input list = "countries" name = "emp_countries"  placeholder = "choose country" required>
+            <datalist id = "countries" required>
+                <option>USA</option>
+                <option>UK</option>
+                <option>India</option>
+                <option>AUS</option>
+                <option>FRANCE</option>
+                <option>IndOnesia</option>
+                <option>Russia</option>
+                <option>Japan</option>
+                <option>Australia</option>
+                <option>Austria</option>
+                <option>Germeny</option>
+                <option>Nepal</option>
+            </datalist>
+            <br>
+            <br>
+            <label>Agree to Company Terms:</label>
+            <input type="checkbox" name = "emp_agree" value = "I agree" required><label>I Agree</label>
+        </fieldset>
+
+        <fieldset style = "border-color: black;">
+            <legend>Date & Time Info</legend>
+            <label>Date of Birth:</label>
+            <input type="date" name = "Date" required>
+            <br>
+            <br>
+
+            <label>Joining Time:</label>
+            <input type="time"  name = "emp_joining" required>
+            <br>
+            <br>
+
+            <label>Joining Month:</label>
+            <input type="month" name = "emp_moonth" required>
+            <br>
+            <br>
+
+            <label>Joining Week:</label>
+            <input type="week" name = "emp_week" required>
+            <br>
+            <br>
+
+            <label>Joining Date & Time:</label>
+            <input type="datetime-local" required>
+        </fieldset>
+
+        <fieldset style = "border-color: black;">
+            <legend><b>Form Control</b></legend>
+
+            <input type="button" value="Click Me"><br><br>
+            <input type="submit" value="Register Now"><br><br>
+            <input type="reset" value="Reset"><br><br>  
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
