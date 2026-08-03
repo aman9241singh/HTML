@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Form</title>
+        
+    </head>
+    <body  style = "border:2px solid black">
+        
+        <h1 style = "background-color:bisque; margin: 0 ; padding: 8px" align = "center">Student Registration Form</h1>
+        
+      <form action = "welcome.html"  method = "get" target = "_blank" style = "background-color:rgb(121, 218, 231);">
+          <fieldset style = "border-color: black;">
+            <legend>Personal Information</legend>
+            <label>Full Name:</label>
+            <input type = "text"  name = "reg_fullname"  placeholder  = "Enter your name" minlength = "3" maxlength = "50" required >
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type = "email"  name = "reg_email"  placeholder = "Enter you Email" required>
+            <br>
+            <br>
+             <label>Password:</label>
+            <input type = "password"  name = "reg_password"  placeholder = "Type your password"  required>
+            <br>
+            <br>
+             <label>Phone Number:</label>
+            <input type = "tel"  name = "reg_number" placeholder = "your phone no."  required>
+            <br>
+            <br>
+             <label>Age:</label>
+            <input type = "number" name = "reg_age"  minlength = "1" maxlength = "2" min = "1" max = "99" required>
+            <br>
+            <br>
+            <label>Gender:</label>
+            <input type = "Radio"  name = "reg_gender"  value = "Male"> <label>Male</label>
+            <input type = "Radio"   name = "reg_gender" value = "Female"> <label>Female</label>
+            <br>
+            <br>
+        </fieldset>
+
+        <fieldset style = "border-color: black;">
+            <legend>Preferences & Extras</legend>
+             <label>Uplode Profile Picture:</label>
+            <input type = "file" multiple  name = "reg_file" required>
+            <br>
+            <br>
+             <label>Color:</label>
+            <input type = "color" name = "reg_color" required>
+            <br>
+            <br>
+             <label>Search for Course:</label>
+            <input type = "search"  name = "reg_search"  placeholder = "Search courses here" required>
+            <br>
+            <br>
+             <label>Course Interest Range:</label>
+            <input type = "range" required>
+            <br>
+            <br>
+             <label>Personal Website:</label>
+            <input type = "url"  name = "reg_website" required>
+            <br>
+            <br>
+             <label>Course Type:</label>
+             <select name = "reg_course">
+                <optgroup label = "ENGINEERING">
+                    <option value = "CE">CE</option>
+                    <option value = "EE">EE</option>
+                    <option value = "ME">ME</option>
+                </optgroup>
+                <optgroup label = "MANAGEMENT">
+                    <option value = "BBA">BBA</option>
+                    <option value = "MBA">MBA</option>
+                    <option value = "LLB">LLB</option>
+                </optgroup>  
+             </select>
+            <br>
+            <br>
+            <label>Preferred Country:</label>
+            <input list = "countries"  name = "reg_countries"  placeholder = "choose country" required>
+            <datalist id = "countries" required>
+                <option value = "USA">USA</option>
+                <option value = "UK">UK</option>
+                <option value = "India">India</option>
+                <option value = "AUS">AUS</option>
+                <option value = "FRANCE">FRANCE</option>
+                <option value = "IndoNESIA">INDONESIA</option>
+            </datalist>
+            <br>
+            <br>
+            <label>Agree to Terms:</label>
+            <input type = "checkbox"  name = "reg_agree"  value = "I agree" required><label>I Agree</label>
+            <br>
+            <br>
+        </fieldset>
+
+        <fieldset style = "border-color: black;">
+            <legend>Date & Time Info</legend>
+            <label>Select Date of Birth:</label>
+            <input type = "date"  name = "Date" required>
+            <br>
+            <br>
+
+            <label>Select Time:</label>
+            <input type = "time" required>
+            <br>
+            <br>
+
+            <label>Select Month:</label>
+            <input type = "month" required>
+            <br>
+            <br>
+
+            <label>Select Week:</label>
+            <input type = "week" required>
+            <br>
+            <br>
+
+            <label>Date & Time:</label>
+            <input type = "datetime-local" required>
+            <br>
+            <br>
+        </fieldset>
+        <fieldset style = "border-color: black;">
+            <legend>Form Control</legend>
+            <button type = "button">Click Me</button>
+            <br>
+            <br>
+
+            <input type = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyvVSXsRH0ZEc22vRDXwKEWVAJ_H2C9glGe8fcEep1tw&s=10" alt = "MU Logo for Registration" width = "50" height = "50">
+            <br>
+            <br>
+
+            <input type = "submit" value = "Register Now">
+            <br>
+            <br>
+
+            <input type = "reset" value = "Reset Data">
+            <br>
+            <br>
+        </fieldset>
+      </form>
+    </body>
+</html>
