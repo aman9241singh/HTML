@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(84, 150, 244);
+    margin:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: rgb(3, 34, 2);
+    color: rgb(236, 159, 167);
+    text-align: center;
+    padding: 10px;
+}
+header {
+    position: relative;
+    text-align: center;
+    padding: 25px;
+    background-color: #031741;
+}
+
+.logo {
+    position:absolute;
+    left:10px;
+    top: 20px;
+    width: 400px;
+    height: 150px;
+    object-fit: contain;
+}
+
+nav {
+    background-color: #140202;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+ nav a{
+    color: rgb(241, 245, 247);
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: rgb(8, 60, 151);
+    padding: 10px;
+    font-weight: bold;
+
+}
+nav a:hover{
+    background-color:rgb(109, 48, 41);
+    text-decoration:underline;
+    text-decoration-color: rgb(223, 215, 6);
+    border: 2px solid brown;
+}
+
+section{
+    background-color: rgb(236, 233, 229);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px ;
+    transition: transform 1s linier;
+}
+section:hover{
+    transform: scale(1.01,1.02);
+    background-color: burlywood;
+    border: 3px solid brown;
+   
+}
+footer {
+    background: #061021;
+    color: rgb(245, 241, 241);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+section h3{
+    color: rgb(3, 44, 8);
+}
